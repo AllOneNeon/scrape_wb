@@ -91,7 +91,7 @@ class WildberriesScraper:
     def __init__(self):
         self.excel = ExcelSaver()
         self.client = httpx.AsyncClient(headers=HEADERS, timeout=10)
-        self.semaphore = asyncio.Semaphore(30)
+        self.semaphore = asyncio.Semaphore(50)
 
     @benchmark
     async def scrape(self):
