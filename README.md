@@ -8,4 +8,4 @@
 Install dependencies via:
 ```bash
 pip install -r requirements.txt
-python wildberries_scraper.py
+python scrape_wb.py
